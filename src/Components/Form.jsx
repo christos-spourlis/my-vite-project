@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 
 export default function Validation() {
+  const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [errors, setErrors] = useState({});
+  const [isSubmit, setSUbmit] = useState(false);
   return (
     <div className="container">
       <form>
